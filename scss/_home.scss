@@ -75,40 +75,8 @@
     position: relative;
   }
 
-  > .state > .hilight {
-    margin: 0 0 rem(32px);
+  > .state > .item {
   }
-
-  .tns-nav {
-    display: flex;
-    justify-content: center;
-
-    button {
-      width: rem(12px);
-      height: rem(12px);
-      transition: background 0.5s ease;
-      border: none;
-      border-radius: 50%;
-      background: #868993;
-
-      &:not(:first-child):not(:last-child) {
-        margin: 0 rem(16px);
-      }
-
-      &.tns-nav-active {
-        background: linear-gradient(90deg, rgba(243, 181, 71, 1) 0%, rgba(240, 214, 126, 1) 50%, rgba(243, 181, 71, 1) 100%);
-      }
-    }
-  }
-}
-
-.hilight-cover {
-  width: 100%;
-  padding: 0 0 50%;
-  background-color: #000000;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 
 .main-provider {

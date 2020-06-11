@@ -13,9 +13,6 @@
     height: rem(30px);
     padding: 0;
     background-color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
     border: none;
   }
 
@@ -28,14 +25,9 @@
   }
 
   > .state > .modal > .button {
+    display: block;
     width: rem(30px);
     height: rem(30px);
-    padding: 0;
-    background-color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    border: none;
   }
 }
 
