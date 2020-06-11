@@ -1,6 +1,6 @@
 // Switch Lanuages Event
-var interactiveLanuagesSwitch = document.getElementsByClassName('interactive-lanuages-switch')[0];
-var interactiveLanuagesModal = document.getElementsByClassName('interactive-lanuages-modal')[0];
+var interactiveLanuagesSwitch = document.querySelectorAll('.interactive-lanuages-switch');
+var interactiveLanuagesModal = document.querySelectorAll('.interactive-lanuages-modal');
 
 if (undefined !== interactiveLanuagesSwitch) {
   document.addEventListener('click', function(e) {
@@ -36,11 +36,11 @@ if (undefined !== interactiveLanuagesSwitch) {
   var slider = tns({
     container: '.interactive-hilight-slider',
     items: 1,
-    slideBy: "page",
+    slideBy: 'page',
     autoplay: true,
     mouseDrag: true,
     controls: false,
     autoplayButtonOutput: false,
-    navPosition: "bottom",
+    navPosition: 'bottom',
   });
 }
