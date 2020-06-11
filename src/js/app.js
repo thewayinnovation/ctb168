@@ -27,3 +27,20 @@ if (undefined !== interactiveLanuagesSwitch) {
     }
   });
 }
+
+
+// Hilight Slider
+var interactiveHilightSlider = document.getElementsByClassName('interactive-hilight-slider')[0];
+
+if (undefined !== interactiveLanuagesSwitch) {
+  var slider = tns({
+    container: '.interactive-hilight-slider',
+    items: 1,
+    slideBy: "page",
+    autoplay: true,
+    mouseDrag: true,
+    controls: false,
+    autoplayButtonOutput: false,
+    navPosition: "bottom",
+  });
+}
