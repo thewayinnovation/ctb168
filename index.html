@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -61,25 +63,25 @@
             <div class="state">
               <div class="widget-social">
                 <div class="state">
-                  <div class="social">
+                  <div class="social -facebook">
                     <!-- Start Facebook Share Button -->
                     <div class="fb-share-button" data-href="http://www.ctb168.net/" data-layout="button"
                       data-size="small">
                       <a target="_blank"
                         href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.ctb168.net%2F&amp;src=sdkpreparse"
-                        class="fb-xfbml-parse-ignore">Share</a>
+                        class="fb-xfbml-parse-ignore">Facebook Share</a>
                     </div>
                     <!-- End Facebook Share Button -->
                   </div>
 
-                  <div class="social">
+                  <div class="social -twitter">
                     <!-- Start Twitter Share Button -->
                     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                      data-show-count="false">Tweet</a>
+                      data-show-count="false">Twitter Tweet</a>
                     <!-- End Twitter Share Button -->
                   </div>
 
-                  <div class="social">
+                  <div class="social -line">
                     <!-- Start Line Share Button -->
                     <div class="line-it-button" data-lang="en" data-type="friend" data-lineid="@ctb168"
                       data-count="true" data-home="true" style="display: none;"></div>
@@ -101,8 +103,9 @@
                           </svg>
                         </label>
 
-                        <input id="login-username-desktop" class="input input-language" data-language="formUsername"
-                          placeholder="" type="text" />
+                        <!-- Start Username Input -->
+                        <input id="login-username-desktop" class="input" placeholder="ชื่อผู้ใช้งาน" type="text" />
+                        <!-- End Username Input -->
                       </span>
 
                       <span class="filed">
@@ -114,14 +117,15 @@
                           </svg>
                         </label>
 
-                        <input id="login-password-desktop" class="input input-language" placeholder=""
-                          data-language="formPasswoed" type="password" />
+                        <!-- Start Password Input -->
+                        <input id="login-password-desktop" class="input" placeholder="รหัสผ่าน" type="password" />
+                        <!-- End Password Input -->
                       </span>
 
                       <span class="action">
-                        <button class="submit" type="submit">
-                          <span class="ml-language" data-language="formSubmit"></span>
-                        </button>
+                        <!-- Start Submit Button -->
+                        <button class="submit" type="submit">เข้าสู่ระบบ</button>
+                        <!-- End Password Input -->
                       </span>
                     </div>
                   </form>
@@ -136,21 +140,15 @@
                 <nav class="header-nav">
                   <ul class="state">
                     <li class="list">
-                      <a class="router -active" href=" /">
-                        <span class="ml-language" data-language="navHome"></span>
-                      </a>
+                      <a class="router -active" href="/">หน้าหลัก</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="/">
-                        <span class="ml-language" data-language="navSport"></span>
-                      </a>
+                      <a class="router" href="/">สปอร์ต</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="/casinos.html">
-                        <span class="ml-language" data-language="navCasinos"></span>
-                      </a>
+                      <a class="router" href="/">คาสิโน</a>
                     </li>
                   </ul>
                 </nav>
@@ -159,9 +157,19 @@
               <div class="column -brand">
                 <div class="header-branding">
                   <a class="state" href="/">
-                    <img class="image"
-                      srcset="src/assets/brand/ctb168-device--@4x.webp 4x, src/assets/brand/ctb168-device--@3x.webp 3x, src/assets/brand/ctb168-device--@2x.webp 2x, src/assets/brand/ctb168-device--@1x.webp 1x"
-                      src="src/assets/brand/ctb168-device--fallback.webp" alt="CTB168" />
+                    <picture>
+                      <source srcset="src/assets/brand/ctb168-device--@1x.webp 1x,
+                         src/assets/brand/ctb168-device--@2x.webp 2x,
+                          src/assets/brand/ctb168-device--@3x.webp 3x" type="image/webp">
+
+                      <source srcset="src/assets/brand/ctb168-device--@1x.png 1x,
+                      src/assets/brand/ctb168-device--@2x.png 2x,
+                       src/assets/brand/ctb168-device--@3x.png 3x" type="image/png">
+
+                      <img srcset="src/assets/brand/ctb168-device--@1x.png 1x,
+                      src/assets/brand/ctb168-device--@2x.png 2x,
+                       src/assets/brand/ctb168-device--@3x.png 3x" alt="CTB168">
+                    </picture>
                   </a>
                 </div>
               </div>
@@ -170,34 +178,33 @@
                 <nav class="header-nav -right">
                   <ul class="state">
                     <li class="list">
-                      <a class="router" href="/">
-                        <span class="ml-language" data-language="navGames"></span>
-                      </a>
+                      <a class="router" href="/">เกมส์</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="/">
-                        <span class="ml-language" data-language="navVirtual"></span>
-                      </a>
+                      <a class="router" href="/">กีฬาจำลอง</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="/">
-                        <span class="ml-language" data-language="navLotto"></span>
-                      </a>
+                      <a class="router" href="/">หวย</a>
                     </li>
                   </ul>
                 </nav>
 
-                <div class="widget-translate interac-widget-translate">
+                <div class="widget-translate interactive-widget-translate">
                   <div class="state">
-                    <button class="switch interac-lanuages-switch" type="button"></button>
+                    <button class="switch interactive-lanuages-switch" type="button">
+                      แปล
+                    </button>
 
-                    <div class="modal interac-lanuages-modal">
-                      <button id="en-gb" class="button interac-translate-lanuage -en" type="button"
-                        style="background-image: url('src/assets/icons/flag/en.webp');"></button>
-                      <button id="th-th" class="button interac-translate-lanuage -th" type="button"
-                        style="background-image: url('src/assets/icons/flag/th.webp');"></button>
+                    <div class="modal interactive-lanuages-modal">
+                      <button class="button interactive-translate-english" type="button">
+                        Eng
+                      </button>
+
+                      <button class="button interactive-translate-thai" type="button">
+                        Thai
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -210,7 +217,7 @@
               <div class="main-hilight">
                 <div class="state">
                   <div class="hilight">
-                    <div class="interac-carousel-hilight">
+                    <div class="interactive-carousel-hilight">
                       <div class="item">
                         <div class="hilight-cover"
                           style="background-image: url('src/assets/images/hilight/hilight-sport-device--fallback.webp');">
@@ -237,7 +244,7 @@
 
               <div class="main-provider">
                 <div class="state">
-                  <div class="carousel interac-carousel-products">
+                  <div class="carousel interactive-carousel-products">
                     <div class="provider-slide">
                       <img src="src/assets/images/providers/provider-ctb168.png" alt="CTB168" />
                     </div>
@@ -360,7 +367,7 @@
           <footer class="ctb168-footer">
             <div class="state">
               <div class="providers">
-                <div class="carousel interac-carousel-providers">
+                <div class="carousel interactive-carousel-providers">
                   <div class="provider-slide">
                     <img src="src/assets/images/providers/provider-ctb168-bw.png" alt="CTB168" />
                   </div>
@@ -412,29 +419,22 @@
               <div class="widget-social">
                 <div class="state">
                   <div class="social">
-                    <div class="fb-share-button" data-href="http://www.ctb168.net/" data-layout="button"
-                      data-size="small">
-                      <a target="_blank"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.ctb168.net%2F&amp;src=sdkpreparse"
-                        class="fb-xfbml-parse-ignore">Share</a>
-                    </div>
-                  </div>
-
-                  <div class="social">
+                    <!-- Start Line Share Button -->
                     <div class="line-it-button" data-lang="en" data-type="friend" data-lineid="@ctb168"
                       data-count="true" data-home="true" style="display: none;"></div>
+                    <!-- End Line Share Button -->
                   </div>
                 </div>
               </div>
 
-              <div class="widget-translate interac-widget-translate">
+              <div class="widget-translate interactive-widget-translate">
                 <div class="state">
-                  <button class="switch interac-lanuages-switch" type="button"></button>
+                  <button class="switch interactive-lanuages-switch" type="button"></button>
 
-                  <div class="modal interac-lanuages-modal">
-                    <button id="en-gb" class="button interac-translate-lanuage -en" type="button"
+                  <div class="modal interactive-lanuages-modal">
+                    <button id="en-gb" class="button interactive-translate-lanuage -en" type="button"
                       style="background-image: url('src/assets/icons/flag/en.webp');"></button>
-                    <button id="th-th" class="button interac-translate-lanuage -th" type="button"
+                    <button id="th-th" class="button interactive-translate-lanuage -th" type="button"
                       style="background-image: url('src/assets/icons/flag/th.webp');"></button>
                   </div>
                 </div>
@@ -442,12 +442,19 @@
             </div>
           </div>
 
-          <div class="ctb168-mmodal interac-slide-mmodal">
+          <div class="ctb168-mmodal interactive-slide-mmodal">
             <div class="mmodal-brand">
               <div class="state">
-                <img class="image"
-                  srcset="src/assets/brand/ctb168-device--@4x.webp 4x, src/assets/brand/ctb168-device--@3x.webp 3x, src/assets/brand/ctb168-device--@2x.webp 2x, src/assets/brand/ctb168-device--@1x.webp 1x"
-                  src="src/assets/brand/ctb168-device--fallback.webp" alt="CTB168" />
+                <picture>
+                  <source srcset="src/assets/icons/flag/th.webp" media="(max-width: 767px)">
+                  <source
+                    srcset="src/assets/brand/ctb168-device--@1x.webp 1x, src/assets/brand/ctb168-device--@2x.webp 2x, src/assets/brand/ctb168-device--@3x.webp 3x,"
+                    media="(min-width: 768px)">
+                  <source
+                    srcset="src/assets/brand/ctb168-device--@1x.webp 1x, src/assets/brand/ctb168-device--@2x.webp 2x, src/assets/brand/ctb168-device--@3x.webp 3x,"
+                    media="(min-width: 1200px)">
+                  <img srcset="src/assets/brand/ctb168-device--fallback.webp" alt="CTB168">
+                </picture>
               </div>
             </div>
 
@@ -464,8 +471,7 @@
                     </label>
 
                     <!-- # START Input Useraame # -->
-                    <input id="login-username" class="input input-language" placeholder="" data-language="formUsername"
-                      type="text" />
+                    <input id="login-username" class="input" placeholder="" data-language="formUsername" type="text" />
                     <!-- # END Input Useraame # -->
                   </div>
 
@@ -478,7 +484,7 @@
                     </label>
 
                     <!-- # START Input Password # -->
-                    <input id="login-password" class="input input-language" data-language="formPasswoed" type="password"
+                    <input id="login-password" class="input" data-language="formPasswoed" type="password"
                       placeholder="" />
                     <!-- # END Input Password # -->
                   </div>
@@ -506,7 +512,7 @@
             </div>
           </div>
 
-          <div class="ctb168-mproviders interac-slide-mproviders">
+          <div class="ctb168-mproviders interactive-slide-mproviders">
             <div class="state">
               <div class="mproviders-product">
                 <div class="state">
@@ -590,7 +596,7 @@
               </li>
 
               <li class="list">
-                <button class="button-navbar interac-button-products">
+                <button class="button-navbar interactive-button-products">
                   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
                   </svg>
@@ -641,9 +647,9 @@
 
   <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v7.0"></script>
+  <script async defer crossorigin="anonymous" src="https://platform.twitter.com/widgets.js"></script>
   <script async defer src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"></script>
-  <script async charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
-  <script src="src/js/libs.min.js"></script>
+  <script src="src/js/picturefill.js"></script>
   <script src="src/js/app.min.js"></script>
   <script src="src/js/scripts.js"></script>
 </body>

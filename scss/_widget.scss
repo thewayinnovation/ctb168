@@ -51,16 +51,30 @@
   }
 
   > .state > .social {
-    &:first-child {
-      margin: 0 rem(8px) 0 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &.-facebook {
+      @media (min-width: 768px) {
+        margin: 0 rem(8px) 0 0;
+      }
     }
 
-    &:not(:first-child):not(:last-child) {
-      margin: 0 rem(8px);
+    &.-twitter {
+      @media (min-width: 768px) {
+        margin: 0 rem(8px);
+      }
     }
 
-    &:last-child {
-      margin: 0 0 0 rem(8px);
+    &.-line {
+      @media (min-width: 768px) {
+        margin: 0 0 0 rem(8px);
+      }
+    }
+
+    span {
+      display: block;
     }
   }
 }

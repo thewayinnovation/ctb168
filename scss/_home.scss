@@ -3,6 +3,7 @@
   max-width: 1920px;
   position: relative;
   padding: 0 rem(64px);
+  margin: 0 auto;
 
   @include xs {
     display: none;

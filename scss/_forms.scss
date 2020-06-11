@@ -5,6 +5,7 @@
 
   > .state {
     display: flex;
+    align-items: center;
     width: 100%;
     position: relative;
   }
@@ -12,6 +13,7 @@
   > .state > .filed {
     flex: 1;
     display: flex;
+    align-items: center;
     margin: 0 rem(8px) 0 0;
   }
 
@@ -53,10 +55,16 @@
     }
   }
 
+  > .state > .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   > .state > .action > .submit {
     width: rem(80px);
     height: rem(32px);
-    padding: 0 rem(16px);
+    padding: 0;
     background: linear-gradient(0deg, #f3b547 0%, #f0d67e 50%, #f3b547 100%);
     border: none;
     border-radius: rem(8px);
