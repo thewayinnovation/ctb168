@@ -1,0 +1,172 @@
+.ctb168-header {
+  width: 100%;
+  padding: rem(32px);
+  position: relative;
+  z-index: 99;
+
+  > .state {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  > .state > .column {
+    display: flex;
+    position: relative;
+
+    &.-navleft {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      @include md {
+        width: calc(50% - #{rem(74.5px)});
+        margin: 0 rem(16px) 0 0;
+      }
+
+      @include lg {
+        width: calc(50% - #{rem(100px)});
+        margin: 0 rem(16px) 0 0;
+      }
+
+      @include xl {
+        width: calc(50% - #{rem(124px)});
+        margin: 0 rem(32px) 0 0;
+      }
+    }
+
+    &.-brand {
+      align-items: flex-end;
+      justify-content: center;
+
+      @include md {
+        width: rem(125px);
+        margin: 0 rem(16px);
+      }
+
+      @include lg {
+        width: rem(150px);
+        margin: 0 rem(32px);
+      }
+
+      @include xl {
+        width: rem(200px);
+        margin: 0 rem(32px);
+      }
+    }
+
+    &.-navright {
+      align-items: flex-end;
+      justify-content: flex-start;
+
+      @include md {
+        width: calc(50% - #{rem(74.5px)});
+        margin: 0 0 0 rem(16px);
+      }
+
+      @include lg {
+        width: calc(50% - #{rem(100px)});
+        margin: 0 0 0 rem(32px);
+      }
+
+      @include xl {
+        width: calc(50% - #{rem(124px)});
+        margin: 0 0 0 rem(32px);
+      }
+    }
+  }
+
+  > .state > .brand {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  > .state > .navleft {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  > .state > .navright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+.header-branding {
+  width: 100%;
+
+  > .state {
+    display: block;
+    overflow: hidden;
+  }
+
+  > .state > .image {
+    width: 100%;
+  }
+}
+
+.header-nav {
+  flex-shrink: 0;
+
+  > .state {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    > .list {
+      list-style: none;
+
+      @include md {
+        margin: 0 rem(16px);
+      }
+
+      @include lg {
+        margin: 0 rem(16px);
+      }
+
+      @include xl {
+        margin: 0 rem(32px);
+      }
+
+      > .router {
+        display: block;
+        line-height: 1;
+        transition: opacity 0.25s ease;
+        color: #ffffff;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @include md {
+          font-size: rem(24px);
+        }
+
+        @include lg {
+          font-size: rem(30px);
+        }
+
+        @include xl {
+          font-size: rem(30px);
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &.-active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &.-right {
+    margin: 0 auto 0 0;
+  }
+}
+
+.ctb168-header {
+}

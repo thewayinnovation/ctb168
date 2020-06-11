@@ -1,0 +1,31 @@
+.ctb168-bar {
+  width: 100%;
+
+  @include md {
+    padding: rem(16px);
+  }
+
+  @include lg {
+    padding: rem(32px);
+  }
+
+  @include xl {
+    padding: rem(32px);
+  }
+
+  > .state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.bar-form {
+  margin: 0 0 0 rem(16px);
+
+  > .state {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+  }
+}

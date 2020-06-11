@@ -1,0 +1,134 @@
+.ctb168-mhome {
+  width: 100%;
+  height: 100%;
+  min-height: rem(726px);
+  position: relative;
+  background-color: #020a1e;
+  z-index: 99;
+
+  @include md {
+    display: none;
+  }
+
+  @include lg {
+    display: none;
+  }
+
+  @include xl {
+    display: none;
+  }
+
+  > .state {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.ctb168-mheader {
+  width: 100%;
+  padding: rem(8px) rem(16px);
+  position: relative;
+
+  > .state {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.ctb168-mmodal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto rem(64px);
+  padding: 0 rem(16px);
+}
+
+.mmodal-brand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 rem(48px);
+
+  > .state {
+    width: 100%;
+    max-width: rem(172px);
+  }
+
+  > .state > .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mmodal-request {
+  width: 100%;
+
+  > .state {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.ctb168-mnav {
+  width: 100%;
+  height: rem(64px);
+
+  background: -webkit-linear-gradient(top, rgb(243, 181, 71), rgb(240, 214, 126), rgb(243, 181, 71));
+  overflow: hidden;
+  z-index: 99;
+
+  > .state {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    > .list {
+      flex: 1;
+      list-style: none;
+    }
+  }
+}
+
+.ctb168-mproviders {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  align-items: center;
+  width: 100%;
+  height: rem(109px);
+  position: absolute;
+  bottom: rem(64px);
+  left: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    opacity: 0;
+  }
+
+  > .state {
+    flex-shrink: 0;
+    width: calc(33.333%);
+    position: relative;
+  }
+}
+
+.mproviders-product {
+  width: 100%;
+  position: relative;
+
+  > .state {
+    width: 100%;
+  }
+}

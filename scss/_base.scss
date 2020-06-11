@@ -1,0 +1,15 @@
+.ctb168 {
+  width: 100%;
+}
+
+.ctb168-app {
+  background-color: $background-color;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+
+  > .state {
+    width: 100%;
+    position: relative;
+  }
+}

@@ -1,0 +1,66 @@
+.widget-translate {
+  width: rem(30px);
+  height: rem(30px);
+
+  > .state {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  > .state > .switch {
+    width: rem(30px);
+    height: rem(30px);
+    padding: 0;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  > .state > .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: rem(44px);
+    left: 0;
+  }
+
+  > .state > .modal > .button {
+    width: rem(30px);
+    height: rem(30px);
+    padding: 0;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
+
+.widget-social {
+  margin: 0 rem(16px) 0 0;
+  position: relative;
+
+  > .state {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  > .state > .social {
+    &:first-child {
+      margin: 0 rem(8px) 0 0;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      margin: 0 rem(8px);
+    }
+
+    &:last-child {
+      margin: 0 0 0 rem(8px);
+    }
+  }
+}

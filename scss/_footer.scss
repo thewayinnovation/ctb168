@@ -1,0 +1,20 @@
+.ctb168-footer {
+  width: 100%;
+  position: relative;
+
+  > .state {
+    width: 100%;
+    position: relative;
+    padding: rem(64px) rem(32px);
+  }
+
+  > .state > .providers {
+    padding: 0 0 rem(64px);
+    margin: 0 0 rem(64px);
+    border-bottom: 1px solid #1a1c26;
+  }
+
+  > .state > .copyright {
+    text-align: center;
+  }
+}

@@ -1,0 +1,162 @@
+.form-login {
+  width: 100%;
+  margin: 0;
+  position: relative;
+
+  > .state {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+
+  > .state > .filed {
+    flex: 1;
+    display: flex;
+    margin: 0 rem(8px) 0 0;
+  }
+
+  > .state > .filed > .label {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(32px);
+    height: rem(32px);
+    margin: 0;
+    background: linear-gradient(90deg, #f3b547 0%, #f0d67e 50%, #f3b547 100%);
+    background: linear-gradient(90deg, #f3b547 0%, #f0d67e 50%, #f3b547 100%);
+    border-top-left-radius: rem(8px);
+    border-bottom-left-radius: rem(8px);
+    border-right: 1px solid #020816;
+    fill: #060911;
+  }
+
+  > .state > .filed > .label > .icon {
+    width: rem(18px);
+    height: rem(18px);
+  }
+
+  > .state > .filed > .input {
+    flex-shrink: 0;
+    width: calc(100% - #{rem(32px)});
+    height: rem(32px);
+    padding: 0 rem(16px);
+    background-color: #353b4b;
+    border: none;
+    border-top-right-radius: rem(8px);
+    border-bottom-right-radius: rem(8px);
+    color: #060911;
+    font-size: rem(21px);
+
+    &:focus {
+      background-color: #ffffff;
+    }
+  }
+
+  > .state > .action > .submit {
+    width: rem(80px);
+    height: rem(32px);
+    padding: 0 rem(16px);
+    background: linear-gradient(0deg, #f3b547 0%, #f0d67e 50%, #f3b547 100%);
+    border: none;
+    border-radius: rem(8px);
+    color: #060911;
+    font-size: rem(21px);
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+.form-loginmobile {
+  width: 100%;
+  margin: 0;
+
+  > .request {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    &.-username {
+      margin: 0 0 rem(16px);
+    }
+
+    &.-password {
+      margin: 0 0 rem(48px);
+    }
+
+    &.-remember {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > .label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(48px);
+      height: rem(48px);
+      margin: 0;
+      background: linear-gradient(90deg, rgba(243, 181, 71, 1) 0%, rgba(240, 214, 126, 1) 50%, rgba(243, 181, 71, 1) 100%);
+      border-top-left-radius: rem(8px);
+      border-bottom-left-radius: rem(8px);
+      border-right: 1px solid #020816;
+
+      > .icon {
+        width: rem(24px);
+        height: rem(24px);
+      }
+    }
+
+    > .input {
+      width: calc(100% - #{rem(48px)});
+      height: rem(48px);
+      padding: 0 rem(16px);
+      background-color: #353b4b;
+      border: none;
+      border-top-right-radius: rem(8px);
+      border-bottom-right-radius: rem(8px);
+      color: #060911;
+      font-size: rem(28px);
+
+      &:focus {
+        background-color: #ffffff;
+      }
+    }
+
+    > .note {
+      margin: 0;
+      line-height: 1;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    > .checkbox {
+      margin: 0 rem(8px) 0 0;
+    }
+  }
+
+  > .action {
+    width: 100%;
+    margin: 0 0 rem(32px);
+    position: relative;
+
+    > .button {
+      width: 100%;
+      height: rem(48px);
+      padding: 0;
+      background: linear-gradient(0deg, rgba(243, 181, 71, 1) 0%, rgba(240, 214, 126, 1) 50%, rgba(243, 181, 71, 1) 100%);
+      border: none;
+      border-radius: rem(8px);
+      color: $theme-color;
+      font-size: rem(28px);
+      font-weight: 700;
+      text-transform: uppercase;
+      &:active {
+        background: rgba(243, 181, 71, 1);
+      }
+    }
+  }
+}

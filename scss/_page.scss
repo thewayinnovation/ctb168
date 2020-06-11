@@ -1,0 +1,33 @@
+.ctb168-page {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  padding: 0 rem(64px);
+
+  @include xs {
+    padding: 0 rem(16px);
+  }
+
+  @include sm {
+    padding: 0 rem(16px);
+  }
+
+  @include md {
+    padding: 0 rem(16px);
+  }
+
+  @include lg {
+    padding: 0 rem(32px);
+  }
+
+  @include xl {
+    padding: 0 rem(64px);
+  }
+
+  > .state {
+    width: 100%;
+    background-color: $theme-color;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+  }
+}
