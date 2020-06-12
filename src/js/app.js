@@ -44,3 +44,33 @@ if (undefined !== interactiveLanuagesSwitch) {
     navPosition: 'bottom',
   });
 }
+
+// Provider Slider Hilight
+var interactiveCarouselProducts = document.getElementsByClassName('interactive-carousel-products')[0];
+
+if (undefined !== interactiveCarouselProducts) {
+  var carouselProviders = tns({
+    container: ".interactive-carousel-products",
+    items: 5,
+    autoplay: true,
+    mouseDrag: true,
+    controls: false,
+    nav: false,
+    autoplayButtonOutput: false,
+  });
+}
+
+// Provider Slider Footer
+var interactiveCarouselProviders = document.getElementsByClassName('interactive-carousel-providers')[0];
+
+if (undefined !== interactiveCarouselProviders) {
+  var carouselProviders = tns({
+    container: ".interactive-carousel-providers",
+    items: 5,
+    autoplay: true,
+    mouseDrag: true,
+    controls: false,
+    nav: false,
+    autoplayButtonOutput: false,
+  });
+}
