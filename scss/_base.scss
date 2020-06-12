@@ -1,5 +1,23 @@
+html {
+  @include xs {
+    height: 100%;
+  }
+
+  @include sm {
+    height: 100%;
+  }
+}
+
 .ctb168 {
   width: 100%;
+
+  @include xs {
+    height: 100%;
+  }
+
+  @include sm {
+    height: 100%;
+  }
 }
 
 .ctb168-app {
@@ -8,8 +26,24 @@
   position: relative;
   z-index: 9;
 
+  @include xs {
+    height: 100%;
+  }
+
+  @include sm {
+    height: 100%;
+  }
+
   > .state {
     width: 100%;
     position: relative;
+
+    @include xs {
+      height: 100%;
+    }
+
+    @include sm {
+      height: 100%;
+    }
   }
 }
