@@ -35,7 +35,7 @@ if (undefined !== interactiveLanuagesSwitch) {
 // Hilight Slider
 var interactiveHilightSlider = document.getElementsByClassName('interactive-hilight-slider')[0];
 
-if (undefined !== interactiveLanuagesSwitch) {
+if (undefined !== interactiveHilightSlider) {
   var slider = tns({
     container: '.interactive-hilight-slider',
     items: 1,

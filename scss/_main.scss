@@ -1,10 +1,180 @@
 .ctb168-main {
   width: 100%;
   position: relative;
-  z-index: 9;
 
-  .state {
+  > .state > .provider {
+    @include md {
+      padding: rem(64px) rem(32px);
+    }
+
+    @include lg {
+      padding: rem(64px) rem(32px);
+    }
+
+    @include xl {
+      padding: rem(64px) rem(32px);
+    }
+  }
+
+  > .state > .products {
+    @include md {
+      padding: rem(64px) rem(32px);
+    }
+
+    @include lg {
+      padding: rem(64px) rem(32px);
+    }
+
+    @include xl {
+      padding: rem(64px) rem(32px);
+    }
+  }
+}
+
+.main-hilight {
+  width: 100%;
+  margin: 0 0 rem(64px);
+  position: relative;
+
+  > .state {
     width: 100%;
     position: relative;
+  }
+
+  > .state {
+    .tns-nav {
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: rem(12px);
+        height: rem(12px);
+        transition: background 0.5s ease;
+        border: none;
+        border-radius: 50%;
+        background-color: #868993;
+
+        &:not(:first-child):not(:last-child) {
+          margin: 0 rem(16px);
+        }
+
+        &.tns-nav-active {
+          background: linear-gradient(
+            90deg,
+            rgba(243, 181, 71, 1) 0%,
+            rgba(240, 214, 126, 1) 50%,
+            rgba(243, 181, 71, 1) 100%
+          );
+        }
+      }
+    }
+  }
+}
+
+.main-provider {
+  width: 100%;
+  position: relative;
+  padding: rem(64px) rem(32px);
+
+  > .state {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.main-products {
+  width: 100%;
+  position: relative;
+  padding: rem(64px) rem(32px);
+
+  > .state {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  > .state > .product {
+    display: block;
+
+    position: relative;
+    transition: all 0.25s ease;
+
+    @include md {
+      width: calc(50% - #{rem(64px)});
+    }
+
+    @include lg {
+      width: calc(33.333% - #{rem(64px)});
+    }
+
+    @include xl {
+      width: calc(33.333% - #{rem(64px)});
+    }
+
+    &:hover {
+      transform: skew(2);
+    }
+
+    &.-casino {
+      margin: 0 rem(16px) rem(32px) 0;
+    }
+
+    &.-sport {
+      @include md {
+        margin: 0 0 rem(32px) rem(16px);
+      }
+
+      @include lg {
+        margin: 0 rem(16px) rem(32px);
+      }
+
+      @include xl {
+        margin: 0 rem(16px) rem(32px);
+      }
+    }
+
+    &.-lotto {
+      @include md {
+        margin: 0 rem(16px) rem(32px) 0;
+      }
+
+      @include lg {
+        margin: 0 0 rem(32px) rem(16px);
+      }
+
+      @include xl {
+        margin: 0 0 rem(32px) rem(16px);
+      }
+    }
+
+    &.-virtual {
+      @include md {
+        margin: 0 0 rem(32px) rem(16px);
+      }
+
+      @include lg {
+        margin: 0 rem(16px) 0 0;
+      }
+
+      @include xl {
+        margin: 0 rem(16px) 0 0;
+      }
+    }
+
+    &.-slot {
+      @include md {
+        margin: 0 0 rem(16px);
+      }
+
+      @include lg {
+        margin: 0 0 0 rem(16px);
+      }
+
+      @include xl {
+        margin: 0 0 0 rem(16px);
+      }
+    }
   }
 }

@@ -1,0 +1,36 @@
+.card-product {
+  width: 100%;
+  position: relative;
+
+  > .state {
+    width: 100%;
+  }
+
+  > .state > .cover {
+    width: 100%;
+    position: relative;
+    transition: all 0.25s ease;
+  }
+
+  > .state > .title {
+    margin: 0;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  > .state > .desc {
+    margin: 0;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &:hover {
+    > .state > .cover {
+      transform: translate(0, -6.25%);
+    }
+  }
+}
