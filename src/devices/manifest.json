@@ -3,10 +3,10 @@
   "short_name": "CTB168",
   "theme_color": "#020a1e",
   "background_color": "#020a1e",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "../index.html",
   "icons": [
     {
       "src": "android-icon-36x36.png",

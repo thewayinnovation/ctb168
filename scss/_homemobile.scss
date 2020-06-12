@@ -1,4 +1,4 @@
-.ctb168-mhome {
+.ctb168-mobilehome {
   width: 100%;
   height: 100%;
   min-height: rem(726px);
@@ -28,7 +28,7 @@
   }
 }
 
-.ctb168-mheader {
+.ctb168-mobileheader {
   width: 100%;
   padding: rem(8px) rem(16px);
   position: relative;
@@ -67,7 +67,7 @@
   }
 }
 
-.ctb168-mmodal {
+.ctb168-mobilemodal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +76,7 @@
   padding: 0 rem(16px);
 }
 
-.mmodal-brand {
+.mobilemodal-brand {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -93,7 +93,7 @@
   }
 }
 
-.mmodal-request {
+.mobilemodal-request {
   width: 100%;
 
   > .state {
@@ -102,7 +102,7 @@
   }
 }
 
-.ctb168-mnav {
+.ctb168-mobilenav {
   width: 100%;
   height: rem(64px);
 
@@ -124,15 +124,13 @@
   }
 }
 
-.ctb168-mproviders {
+.ctb168-mobileproviders {
   display: none;
   opacity: 0;
   visibility: hidden;
-  align-items: center;
   width: 100%;
-  height: rem(109px);
   position: absolute;
-  bottom: rem(64px);
+  bottom: rem(96px);
   left: 0;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -142,15 +140,24 @@
   }
 
   > .state {
-    flex-shrink: 0;
-    width: calc(33.333%);
+    display: flex;
+    align-items: center;
     position: relative;
   }
 }
 
-.mproviders-product {
+.mobileproviders-product {
+  flex-shrink: 0;
   width: 100%;
   position: relative;
+
+  @include xs {
+    width: calc(25%);
+  }
+
+  @include sm {
+    width: calc(20%);
+  }
 
   > .state {
     width: 100%;

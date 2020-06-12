@@ -11,7 +11,19 @@
   border: none;
 
   &.-active {
-    background: #5d626f;
+    background-color: #5d626f;
+  }
+
+  &:active {
+    background-color: #5d626f;
+
+    > .icon {
+      fill: rgba(243, 181, 71, 1);
+    }
+
+    > .title {
+      color: rgba(243, 181, 71, 1);
+    }
   }
 
   > .icon {

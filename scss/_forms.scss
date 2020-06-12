@@ -83,10 +83,14 @@
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
+
+    &:active {
+      background: rgba(243, 181, 71, 1);
+    }
   }
 }
 
-.form-loginmobile {
+.form-mobilelogin {
   width: 100%;
   margin: 0;
 
@@ -176,7 +180,7 @@
     margin: 0 0 rem(32px);
     position: relative;
 
-    > .button {
+    > .submit {
       width: 100%;
       height: rem(48px);
       padding: 0;
@@ -192,6 +196,7 @@
       font-size: rem(28px);
       font-weight: 700;
       text-transform: uppercase;
+
       &:active {
         background: rgba(243, 181, 71, 1);
       }
