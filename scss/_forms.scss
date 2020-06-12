@@ -51,7 +51,7 @@
     font-size: rem(21px);
 
     &::placeholder {
-      opacity: 0.75;
+      opacity: 1;
       color: #ffffff;
     }
 
@@ -59,7 +59,7 @@
       background-color: #ffffff;
 
       &::placeholder {
-        opacity: 0.75;
+        opacity: 1;
         color: #060911;
       }
     }
@@ -145,7 +145,7 @@
       font-size: rem(28px);
 
       &::placeholder {
-        opacity: 0.75;
+        opacity: 1;
         color: #ffffff;
       }
 
@@ -153,7 +153,7 @@
         background-color: #ffffff;
 
         &::placeholder {
-          opacity: 0.75;
+          opacity: 1;
           color: #060911;
         }
       }
