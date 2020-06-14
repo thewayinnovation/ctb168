@@ -1,35 +1,35 @@
 // Switch Lanuages Event
-var interactiveLanuagesSwitch = document.querySelectorAll('.interactive-lanuages-switch');
-var interactiveLanuagesModal = document.querySelectorAll('.interactive-lanuages-modal');
+// var interactiveLanuagesSwitch = document.querySelectorAll('.interactive-lanuages-switch');
+// var interactiveLanuagesModal = document.querySelectorAll('.interactive-lanuages-modal');
 
-if (undefined !== interactiveLanuagesSwitch) {
-  document.addEventListener('click', function (e) {
-    var node = e.target;
-    var inside = false;
+// if (undefined !== interactiveLanuagesSwitch) {
+//   document.addEventListener('click', function (e) {
+//     var node = e.target;
+//     var inside = false;
 
-    while (node) {
-      if (node.classList.contains('interactive-lanuages-switch')) {
-        inside = true;
+//     while (node) {
+//       if (node.classList.contains('interactive-lanuages-switch')) {
+//         inside = true;
 
-        break;
-      }
+//         break;
+//       }
 
-      node = node.parentElement;
-    }
+//       node = node.parentElement;
+//     }
 
-    if (!inside) {
-      gsap.to(interactiveLanuagesModal, {
-        duration: 0.25,
-        autoAlpha: 0,
-      });
-    } else {
-      gsap.to(interactiveLanuagesModal, {
-        duration: 0.25,
-        autoAlpha: 1,
-      });
-    }
-  });
-}
+//     if (!inside) {
+//       gsap.to(interactiveLanuagesModal, {
+//         duration: 0.25,
+//         autoAlpha: 0,
+//       });
+//     } else {
+//       gsap.to(interactiveLanuagesModal, {
+//         duration: 0.25,
+//         autoAlpha: 1,
+//       });
+//     }
+//   });
+// }
 
 
 // Hilight Slider
@@ -60,6 +60,23 @@ if (undefined !== interactiveCarouselProducts) {
     controls: false,
     nav: false,
     autoplayButtonOutput: false,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      576: {
+        items: 4,
+      },
+      768: {
+        items: 4,
+      },
+      992: {
+        items: 5,
+      },
+      1200: {
+        items: 5,
+      }
+    }
   });
 }
 
@@ -69,12 +86,28 @@ var interactiveCarouselProviders = document.getElementsByClassName('interactive-
 if (undefined !== interactiveCarouselProviders) {
   var carouselProviders = tns({
     container: '.interactive-carousel-providers',
-    items: 5,
     autoplay: true,
     mouseDrag: true,
     controls: false,
     nav: false,
     autoplayButtonOutput: false,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      576: {
+        items: 4,
+      },
+      768: {
+        items: 4,
+      },
+      992: {
+        items: 5,
+      },
+      1200: {
+        items: 5,
+      }
+    }
   });
 }
 

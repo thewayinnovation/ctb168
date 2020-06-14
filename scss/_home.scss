@@ -4,12 +4,14 @@
   position: relative;
   margin: 0 auto;
 
-  @include xs {
-    display: none;
-  }
+  &.-index {
+    @include xs {
+      display: none;
+    }
 
-  @include sm {
-    display: none;
+    @include sm {
+      display: none;
+    }
   }
 
   @include md {

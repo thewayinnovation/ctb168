@@ -3,7 +3,7 @@
   "short_name": "CTB168",
   "theme_color": "#020a1e",
   "background_color": "#020a1e",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "index.html",
