@@ -31,6 +31,19 @@
 //   });
 // }
 
+// Interactive Focus Events
+var interactiveInputUsername = document.getElementsByClassName('interactive-input-username')[0];
+var interactiveButtonFocus = document.getElementsByClassName("interactive-button-focus")
+
+if (undefined !== interactiveInputUsername) {
+  for (let interactive of interactiveButtonFocus) {
+    interactive.addEventListener('click', function (e) {
+      e.preventDefault();
+      interactiveInputUsername.focus();
+    });
+  }
+}
+
 
 // Hilight Slider
 var interactiveHilightSlider = document.getElementsByClassName('interactive-hilight-slider')[0];

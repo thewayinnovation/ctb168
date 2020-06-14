@@ -95,7 +95,7 @@
                         </label>
 
                         <!-- Start Username Input -->
-                        <input id="login-username-desktop" class="input" placeholder="ชื่อผู้ใช้งาน" aria-labelledby="login-username-desktop" type="text" />
+                        <input id="login-username-desktop" class="input interactive-input-username" placeholder="ชื่อผู้ใช้งาน" aria-labelledby="login-username-desktop" type="text" />
                         <!-- End Username Input -->
                       </span>
 
@@ -129,15 +129,15 @@
                 <nav class="header-nav">
                   <ul class="state">
                     <li class="list">
-                      <a class="router -active" href="index.html">หน้าหลัก</a>
+                      <a class="router interactive-button-focus -active" href="index.html">หน้าหลัก</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="live-casino.html">คาสิโน</a>
+                      <a class="router interactive-button-focus" href="#">คาสิโน</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="sports.html">สปอร์ต</a>
+                      <a class="router interactive-button-focus" href="#">สปอร์ต</a>
                     </li>
                   </ul>
                 </nav>
@@ -161,15 +161,15 @@
                 <nav class="header-nav -right">
                   <ul class="state">
                     <li class="list">
-                      <a class="router" href="games.html">เกมส์</a>
+                      <a class="router interactive-button-focus" href="#">เกมส์</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="/">กีฬาจำลอง</a>
+                      <a class="router interactive-button-focus" href="#">กีฬาจำลอง</a>
                     </li>
 
                     <li class="list">
-                      <a class="router" href="/">หวย</a>
+                      <a class="router interactive-button-focus" href="#">หวย</a>
                     </li>
                   </ul>
                 </nav>
@@ -347,7 +347,7 @@
 
               <div class="main-products">
                 <div class="state">
-                  <a class="product -casino" href="/">
+                  <a class="product interactive-button-focus -casino" href="#">
                     <div class="card-product">
                       <div class="state">
                         <div class="cover">
@@ -367,7 +367,7 @@
                     </div>
                   </a>
 
-                  <a class="product -sport" href="/">
+                  <a class="product interactive-button-focus -sport" href="#">
                     <div class="card-product">
                       <div class="state">
                         <div class="cover">
@@ -387,7 +387,7 @@
                     </div>
                   </a>
 
-                  <a class="product -lotto" href="/">
+                  <a class="product interactive-button-focus -lotto" href="#">
                     <div class="card-product">
                       <div class="state">
                         <div class="cover">
@@ -407,7 +407,7 @@
                     </div>
                   </a>
 
-                  <a class="product -virtual" href="/">
+                  <a class="product interactive-button-focus -virtual" href="#">
                     <div class="card-product">
                       <div class="state">
                         <div class="cover">
@@ -426,7 +426,7 @@
                     </div>
                   </a>
 
-                  <a class="product -slot" href="/">
+                  <a class="product interactive-button-focus -slot" href="#">
                     <div class="card-product">
                       <div class="state">
                         <div class="cover">
@@ -792,7 +792,20 @@
     </div>
   </div>
 
-  -
+  <!-- Start Facebook Developer -->
+  <div id="fb-root"></div>
+  <!--  End Facebook Developer-->
+
+  <!-- Start Third Party Scripts -->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v7.0"></script>
+  <script async defer crossorigin="anonymous" src="https://platform.twitter.com/widgets.js"></script>
+  <script async defer src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"></script>
+  <!--  End Interactive Scripts -->
+
+  <!-- Start Third Party Scripts -->
+  <script src="src/js/libs.min.js"></script>
+  <script src="src/js/app.min.js"></script>
+  <!--  End Interactive Scripts -->
 </body>
 
 </html>
