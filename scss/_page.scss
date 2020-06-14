@@ -1,16 +1,8 @@
 .ctb168-page {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1386px;
   position: relative;
-  padding: 0 rem(64px);
-
-  @include xs {
-    padding: 0 rem(16px);
-  }
-
-  @include sm {
-    padding: 0 rem(16px);
-  }
+  margin: 0 auto;
 
   @include md {
     padding: 0 rem(16px);

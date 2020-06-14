@@ -1,13 +1,33 @@
 .ctb168-header {
   width: 100%;
-  padding: rem(32px);
   position: relative;
   z-index: 99;
+
+  @include xs {
+    padding: rem(32px) rem(16px);
+  }
+
+  @include sm {
+    padding: rem(32px) rem(16px);
+  }
+
+  @include md {
+    padding: rem(32px);
+  }
+
+  @include lg {
+    padding: rem(32px);
+  }
+
+  @include xl {
+    padding: rem(32px);
+  }
 
   > .state {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   > .state > .column {
@@ -100,14 +120,6 @@
 
   > .state {
   }
-
-  > .state > .column {
-    &.-branding {
-    }
-
-    &.-mainnav {
-    }
-  }
 }
 
 .header-page {
@@ -120,11 +132,38 @@
   }
 }
 
-.header-branding {
+.header-brand {
   width: 100%;
+
+  &.-home {
+    max-width: rem(185px);
+  }
+
+  &.-page {
+    @include xs {
+      max-width: rem(192px);
+    }
+
+    @include sm {
+      max-width: rem(234px);
+    }
+
+    @include md {
+      max-width: rem(266px);
+    }
+
+    @include lg {
+      max-width: rem(298px);
+    }
+
+    @include xl {
+      max-width: rem(320px);
+    }
+  }
 
   > .state {
     display: block;
+    width: 100%;
     overflow: hidden;
   }
 
@@ -133,8 +172,16 @@
   }
 }
 
+.brand-router {
+  display: block;
+}
+
 .header-nav {
   flex-shrink: 0;
+
+  &.-right {
+    margin: 0 auto 0 0;
+  }
 
   > .state {
     display: flex;
@@ -144,6 +191,14 @@
 
     > .list {
       list-style: none;
+
+      @include xs {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
 
       @include md {
         margin: 0 rem(16px);
@@ -186,9 +241,5 @@
         }
       }
     }
-  }
-
-  &.-right {
-    margin: 0 auto 0 0;
   }
 }

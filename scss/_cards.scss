@@ -36,3 +36,12 @@
     }
   }
 }
+
+.card-banner {
+  width: 100%;
+  overflow: hidden;
+
+  > .state {
+    position: relative;
+  }
+}

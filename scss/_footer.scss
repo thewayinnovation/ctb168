@@ -7,15 +7,15 @@
     position: relative;
     padding: rem(64px) rem(32px);
   }
+}
 
-  > .state > .providers {
-    padding: 0 0 rem(64px);
-    margin: 0 0 rem(64px);
-    border-bottom: 1px solid #1a1c26;
-    filter: grayscale(100%);
-  }
+.footer-providers {
+  padding: 0 0 rem(64px);
+  margin: 0 0 rem(64px);
+  border-bottom: 1px solid #1a1c26;
+  filter: grayscale(100%);
+}
 
-  > .state > .copyright {
-    text-align: center;
-  }
+.footer-copyright {
+  text-align: center;
 }
