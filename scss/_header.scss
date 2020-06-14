@@ -141,23 +141,23 @@
 
   &.-page {
     @include xs {
-      max-width: rem(192px);
+      max-width: rem(160px);
     }
 
     @include sm {
-      max-width: rem(234px);
+      max-width: rem(176px);
     }
 
     @include md {
-      max-width: rem(266px);
+      max-width: rem(176px);
     }
 
     @include lg {
-      max-width: rem(298px);
+      max-width: rem(192px);
     }
 
     @include xl {
-      max-width: rem(320px);
+      max-width: rem(208px);
     }
   }
 
