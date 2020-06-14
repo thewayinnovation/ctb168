@@ -59,12 +59,8 @@
         }
 
         &.tns-nav-active {
-          background: linear-gradient(
-            90deg,
-            rgba(243, 181, 71, 1) 0%,
-            rgba(240, 214, 126, 1) 50%,
-            rgba(243, 181, 71, 1) 100%
-          );
+          background: #a6a044;
+          background: linear-gradient(180deg, #f5cd7f 0%, #a6a044 50%, #b0a636 100%);
         }
       }
     }

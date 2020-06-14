@@ -1,0 +1,110 @@
+.ctb168-statusbar {
+  width: 100%;
+  position: relative;
+
+  color: #000000;
+
+  > .state {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.statusbar-status {
+  width: 100%;
+  height: rem(45px);
+  position: relative;
+  background: #a6a044;
+  background: linear-gradient(180deg, #f5cd7f 0%, #a6a044 50%, #b0a636 100%);
+  border-bottom: rem(1px) solid #020a1e;
+
+  > .state {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @include xs {
+      padding: 0 rem(16px);
+    }
+
+    @include sm {
+      padding: 0 rem(16px);
+    }
+
+    @include md {
+      padding: 0 rem(32px);
+    }
+
+    @include lg {
+      padding: 0 rem(32px);
+    }
+
+    @include xl {
+      padding: 0 rem(32px);
+    }
+  }
+}
+
+.status-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  > .state {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.statusbar-notice {
+  width: 100%;
+  height: rem(45px);
+  margin: 0 0 rem(32px);
+  position: relative;
+  background: #a6a044;
+  background: linear-gradient(180deg, #f5cd7f 0%, #a6a044 50%, #b0a636 100%);
+
+  > .state {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @include xs {
+      padding: 0 0 0 rem(16px);
+    }
+
+    @include sm {
+      padding: 0 0 0 rem(16px);
+    }
+
+    @include md {
+      padding: 0 0 0 rem(32px);
+    }
+
+    @include lg {
+      padding: 0 0 0 rem(32px);
+    }
+
+    @include xl {
+      padding: 0 0 0 rem(32px);
+    }
+  }
+}
+
+.notice-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  > .state {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}

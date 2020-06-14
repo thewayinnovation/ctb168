@@ -12,10 +12,14 @@
 .footer-providers {
   padding: 0 0 rem(64px);
   margin: 0 0 rem(64px);
-  border-bottom: 1px solid #1a1c26;
+  border-bottom: rem(1px) solid #1a1c26;
   filter: grayscale(100%);
 }
 
 .footer-copyright {
   text-align: center;
+
+  @include xs {
+    font-size: rem(16px);
+  }
 }

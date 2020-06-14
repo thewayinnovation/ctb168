@@ -23,6 +23,10 @@
     padding: rem(32px);
   }
 
+  &.-page {
+    background-color: #020a1e;
+  }
+
   > .state {
     display: flex;
     justify-content: center;
@@ -117,18 +121,24 @@
 
 .header-home {
   width: 100%;
+  position: relative;
 
   > .state {
+    width: 100%;
+    position: relative;
   }
 }
 
 .header-page {
   width: 100%;
+  position: relative;
 
   > .state {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: relative;
   }
 }
 
@@ -141,11 +151,11 @@
 
   &.-page {
     @include xs {
-      max-width: rem(160px);
+      max-width: rem(176px);
     }
 
     @include sm {
-      max-width: rem(176px);
+      max-width: rem(192px);
     }
 
     @include md {
