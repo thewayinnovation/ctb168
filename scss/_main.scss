@@ -47,9 +47,12 @@
       justify-content: center;
 
       button {
+        flex-shrink: 0;
         width: rem(12px);
         height: rem(12px);
+        padding: 0;
         transition: background 0.5s ease;
+
         border: none;
         border-radius: 50%;
         background-color: #868993;
