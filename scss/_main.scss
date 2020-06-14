@@ -178,3 +178,12 @@
     }
   }
 }
+
+.main-apps {
+  width: 100%;
+
+  > .state {
+    width: 100%;
+    position: relative;
+  }
+}

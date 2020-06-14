@@ -52,4 +52,15 @@
 }
 
 .button-app {
+  width: 20.668%;
+  position: absolute;
+  right: 25%;
+  bottom: 12.5%;
+  transform: translate(70%, 0);
+  transition: all 0.25s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  z-index: 99;
+
+  &:hover {
+    transform: translate(70%, 0) scale(1.125);
+  }
 }

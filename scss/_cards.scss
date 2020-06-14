@@ -37,9 +37,11 @@
   }
 }
 
-.card-banner {
+.card-app {
   width: 100%;
+  position: relative;
   overflow: hidden;
+  z-index: 9;
 
   > .state {
     position: relative;
