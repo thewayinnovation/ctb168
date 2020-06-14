@@ -19,6 +19,7 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    white-space: nowrap;
   }
 
   > .state > .desc {
@@ -26,11 +27,12 @@
     line-height: 1;
     color: #ffffff;
     text-align: center;
+    white-space: nowrap;
   }
 
   &:hover {
     > .state > .cover {
-      transform: translate(0, -6.25%);
+      transform: scale(1.125);
     }
   }
 }
