@@ -152,11 +152,11 @@
   position: relative;
 
   @include xs {
-    width: calc(25%);
+    width: calc(33.333%);
   }
 
   @include sm {
-    width: calc(20%);
+    width: calc(25%);
   }
 
   > .state {

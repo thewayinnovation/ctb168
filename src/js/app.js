@@ -33,13 +33,15 @@
 
 // Interactive Focus Events
 var interactiveInputUsername = document.getElementsByClassName('interactive-input-username')[0];
-var interactiveButtonFocus = document.getElementsByClassName("interactive-button-focus")
+var interactiveInputMobileusername = document.getElementsByClassName('interactive-input-mobileusername')[0];
+var interactiveHandleFocus = document.getElementsByClassName("interactive-handle-focus")
 
-if (undefined !== interactiveInputUsername) {
-  for (let interactive of interactiveButtonFocus) {
+if (undefined !== interactiveHandleFocus) {
+  for (let interactive of interactiveHandleFocus) {
     interactive.addEventListener('click', function (e) {
       e.preventDefault();
       interactiveInputUsername.focus();
+      interactiveInputMobileusername.focus();
     });
   }
 }
