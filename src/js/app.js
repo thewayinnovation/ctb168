@@ -1,36 +1,3 @@
-// Switch Lanuages Event
-// var interactiveLanuagesSwitch = document.querySelectorAll('.interactive-lanuages-switch');
-// var interactiveLanuagesModal = document.querySelectorAll('.interactive-lanuages-modal');
-
-// if (undefined !== interactiveLanuagesSwitch) {
-//   document.addEventListener('click', function (e) {
-//     var node = e.target;
-//     var inside = false;
-
-//     while (node) {
-//       if (node.classList.contains('interactive-lanuages-switch')) {
-//         inside = true;
-
-//         break;
-//       }
-
-//       node = node.parentElement;
-//     }
-
-//     if (!inside) {
-//       gsap.to(interactiveLanuagesModal, {
-//         duration: 0.25,
-//         autoAlpha: 0,
-//       });
-//     } else {
-//       gsap.to(interactiveLanuagesModal, {
-//         duration: 0.25,
-//         autoAlpha: 1,
-//       });
-//     }
-//   });
-// }
-
 // Interactive Focus Events
 var interactiveInputUsername = document.getElementsByClassName('interactive-input-username')[0];
 var interactiveInputMobileusername = document.getElementsByClassName('interactive-input-mobileusername')[0];
@@ -44,6 +11,116 @@ if (undefined !== interactiveHandleFocus) {
       interactiveInputMobileusername.focus();
     });
   }
+}
+
+// Interactive Berger Events
+var interactiveHandleBerger = document.getElementsByClassName('interactive-handle-berger')[0];
+var interactiveHandleBergerLine1 = document.getElementsByClassName('interactive-handle-berger-line1')[0];
+var interactiveHandleBergerLine2 = document.getElementsByClassName('interactive-handle-berger-line2')[0];
+var interactiveHandleBergerLine3 = document.getElementsByClassName('interactive-handle-berger-line3')[0];
+var interactiveHandleBergerLine4 = document.getElementsByClassName('interactive-handle-berger-line4')[0];
+var interactiveBaconState = document.getElementsByClassName('interactive-bacon-state')[0];
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth < 768) {
+    gsap.to(interactiveBaconState, {
+      display: "none",
+      autoAlpha: 0,
+      x: '100%',
+    });
+
+    gsap.to([interactiveHandleBergerLine2, interactiveHandleBergerLine3], {
+      duration: 0.25,
+      rotation: 0,
+
+      onComplete() {
+        gsap.to(interactiveHandleBergerLine4, {
+          duration: 0.25,
+          opacity: 1,
+        });
+
+        gsap.to(interactiveBaconState, {
+          display: "none",
+          autoAlpha: 0,
+          x: '100%',
+        });
+
+        gsap.to([interactiveHandleBergerLine1, interactiveHandleBergerLine4], {
+          duration: 0.25,
+          opacity: 1,
+
+          onComplete() {
+            document.body.removeAttribute('style');
+          },
+        });
+      },
+    });
+  }
+});
+
+
+
+if (undefined !== interactiveHandleBerger) {
+  interactiveHandleBerger.addEventListener('click', () => {
+    activeBaconState = !activeBaconState;
+
+    if (activeBaconState === true) {
+      document.body.style.overflow = 'hidden';
+
+      gsap.set([interactiveHandleBergerLine1, interactiveHandleBergerLine4], {
+        duration: 0.25,
+        opacity: 0,
+
+        onComplete() {
+          gsap.to(interactiveHandleBergerLine2, {
+            duration: 0.25,
+            rotation: 45,
+          });
+
+          gsap.to(interactiveHandleBergerLine3, {
+            duration: 0.25,
+            rotation: -45,
+          });
+
+          gsap.to(interactiveBaconState, {
+            display: "block",
+            autoAlpha: 1,
+            x: 0,
+          });
+        },
+      });
+
+    } else {
+      gsap.to([interactiveHandleBergerLine2, interactiveHandleBergerLine3], {
+        duration: 0.25,
+        rotation: 0,
+
+        onComplete() {
+          gsap.to(interactiveHandleBergerLine4, {
+            duration: 0.25,
+            opacity: 1,
+          });
+
+          gsap.to(interactiveBaconState, {
+            display: "none",
+            autoAlpha: 0,
+            x: '100%',
+          });
+
+          gsap.to([interactiveHandleBergerLine1, interactiveHandleBergerLine4], {
+            duration: 0.25,
+            opacity: 1,
+
+            onComplete() {
+              document.body.removeAttribute('style');
+            },
+          });
+        },
+      });
+    }
+  });
+
+  var activeBaconState = false;
 }
 
 

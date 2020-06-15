@@ -1,12 +1,13 @@
 .ctb168-bar {
   width: 100%;
+  background-color: #020a1e;
 
   @include xs {
-    padding: 0 rem(16px);
+    padding: rem(16px);
   }
 
   @include sm {
-    padding: 0 rem(16px);
+    padding: rem(16px);
   }
 
   @include md {

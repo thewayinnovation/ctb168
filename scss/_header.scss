@@ -1,6 +1,7 @@
 .ctb168-header {
   width: 100%;
   position: relative;
+  background-color: #020a1e;
   z-index: 99;
 
   @include xs {
@@ -23,25 +24,38 @@
     padding: rem(32px);
   }
 
-  &.-page {
-    background-color: #020a1e;
-  }
-
   > .state {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include xs {
+      flex-wrap: wrap;
+    }
+
+    @include sm {
+      flex-wrap: wrap;
+    }
   }
 
   > .state > .column {
     display: flex;
     position: relative;
+    z-index: 99;
 
     &.-navleft {
       flex-direction: column;
       align-items: flex-end;
       justify-content: flex-end;
+
+      @include xs {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
 
       @include md {
         width: calc(50% - #{rem(74.5px)});
@@ -63,18 +77,25 @@
       align-items: flex-end;
       justify-content: center;
 
+      @include xs {
+        width: 100%;
+        margin: 0 0 rem(16px);
+      }
+
+      @include sm {
+        width: 100%;
+        margin: 0 0 rem(16px);
+      }
+
       @include md {
-        width: rem(125px);
         margin: 0 rem(16px);
       }
 
       @include lg {
-        width: rem(150px);
         margin: 0 rem(32px);
       }
 
       @include xl {
-        width: rem(200px);
         margin: 0 rem(32px);
       }
     }
@@ -82,6 +103,14 @@
     &.-navright {
       align-items: flex-end;
       justify-content: flex-start;
+
+      @include xs {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
 
       @include md {
         width: calc(50% - #{rem(74.5px)});
@@ -143,32 +172,28 @@
 }
 
 .header-brand {
-  width: 100%;
+  @include xs {
+    width: rem(96px);
+  }
+
+  @include sm {
+    width: rem(128px);
+  }
+
+  @include md {
+    width: rem(128px);
+  }
+
+  @include lg {
+    width: rem(162px);
+  }
+
+  @include xl {
+    width: rem(192px);
+  }
 
   &.-home {
     max-width: rem(185px);
-  }
-
-  &.-page {
-    @include xs {
-      max-width: rem(176px);
-    }
-
-    @include sm {
-      max-width: rem(192px);
-    }
-
-    @include md {
-      max-width: rem(176px);
-    }
-
-    @include lg {
-      max-width: rem(192px);
-    }
-
-    @include xl {
-      max-width: rem(208px);
-    }
   }
 
   > .state {
@@ -199,28 +224,17 @@
     padding: 0;
     margin: 0;
 
+    @include xs {
+      height: 24px;
+    }
+
+    @include sm {
+      height: 24px;
+    }
+
     > .list {
       list-style: none;
-
-      @include xs {
-        display: none;
-      }
-
-      @include sm {
-        display: none;
-      }
-
-      @include md {
-        margin: 0 rem(16px);
-      }
-
-      @include lg {
-        margin: 0 rem(16px);
-      }
-
-      @include xl {
-        margin: 0 rem(32px);
-      }
+      margin: 0 rem(16px);
 
       > .router {
         display: block;
@@ -229,6 +243,14 @@
         color: #ffffff;
         text-transform: uppercase;
         white-space: nowrap;
+
+        @include xs {
+          font-size: rem(24px);
+        }
+
+        @include sm {
+          font-size: rem(24px);
+        }
 
         @include md {
           font-size: rem(24px);
@@ -250,6 +272,145 @@
           opacity: 0.5;
         }
       }
+    }
+  }
+}
+
+.header-berger {
+  width: 2.125rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  z-index: 99;
+
+  @include md {
+    display: none;
+  }
+
+  @include lg {
+    display: none;
+  }
+
+  @include xl {
+    display: none;
+  }
+
+  > .state {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.berger-button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  background-color: transparent;
+  border: none;
+
+  > .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: #ffffff;
+
+    &.-l1 {
+      top: 0;
+    }
+
+    &.-l2 {
+      top: 50%;
+      transform: translate(0px, -50%);
+    }
+
+    &.-l3 {
+      top: 50%;
+      transform: translate(0px, -50%);
+    }
+
+    &.-l4 {
+      bottom: 0;
+    }
+  }
+}
+
+.header-bacon {
+  background-color: #020a1e;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  transform: translate(100%, 0);
+  z-index: 9;
+
+  @include xs {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    top: 175px;
+    height: calc(100% - #{rem(215px)});
+  }
+
+  @include sm {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    top: 212px;
+    height: calc(100% - #{rem(240px)});
+  }
+
+  @include md {
+    display: none;
+  }
+
+  @include lg {
+    display: none;
+  }
+
+  @include xl {
+    display: none;
+  }
+
+  > .state {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+
+    @include xs {
+      padding: 0 rem(16px);
+    }
+
+    @include sm {
+      padding: 0 rem(16px);
+    }
+  }
+}
+
+.bacon-apps {
+  width: 100%;
+  position: relative;
+
+  padding: rem(64px);
+
+  > .state {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  > .state > .app {
+    @include xs {
+      width: 100%;
+    }
+
+    @include sm {
+      width: 50%;
     }
   }
 }
