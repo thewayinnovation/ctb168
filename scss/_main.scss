@@ -199,9 +199,39 @@
 
 .main-apps {
   width: 100%;
+  position: relative;
 
   > .state {
     width: 100%;
     position: relative;
+  }
+}
+
+.main-unigue {
+  width: 100%;
+  position: relative;
+
+  > .state {
+    width: 100%;
+    position: relative;
+    @include xs {
+      padding: rem(64px) rem(16px);
+    }
+
+    @include sm {
+      padding: rem(64px) rem(16px);
+    }
+
+    @include md {
+      padding: rem(64px) rem(32px);
+    }
+
+    @include lg {
+      padding: rem(64px) rem(32px);
+    }
+
+    @include xl {
+      padding: rem(64px) rem(32px);
+    }
   }
 }
